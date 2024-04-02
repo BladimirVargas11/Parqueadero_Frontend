@@ -1,0 +1,181 @@
+@import '~ngx-toastr/toastr';
+
+@import url("../node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f7fa;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 2.25rem 100px -0.75rem 62px;
+  box-shadow: 0 0.25rem 0.5rem #e6edef;
+  color: #495057;
+}
+
+@media(max-width: 500px)  {
+  .card{
+    margin: 2.25rem 0px -0.75rem 0px;
+  }
+}
+
+.card .card-head {
+  padding: 0rem 1.5rem;
+  border-bottom: 1px solid #edf1f7;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card .card-body {
+    padding: 1rem 1.5rem; 
+}
+
+
+.body-content{
+    width: calc(100%-5rem);
+    height: 100vh;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease;
+    background: #f4f7fa;
+    /* padding: 3rem; */
+    }
+    
+    .body-trymed{
+        width: calc(100%-16.5625rem);
+        margin-left: 16.5625rem;
+    }
+    
+    .body-md-screen{
+        width: calc(100%-5rem);
+        margin-left: 5rem;
+    
+    }
+
+
+
+
+    /* Pag principal *
+
+/* End Responsive */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.spinner {
+  /* Size */
+  height: 4rem;
+  width: 4rem;
+
+  /* Create a curve at the top */
+  border: 4px solid #d1d5db;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+
+  animation: spinner 800ms linear infinite;
+}
+
+@keyframes spinner {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+.title-header {
+  position: relative;
+  top: 24px;
+  font-size: 27px;
+}
+
+.icon-header{
+  position: relative;
+  top: 24px;
+  font-size: x-large;
+}
+
+.table-container {
+  -webkit-box-shadow: 4px 4px 25px 0px rgba(110, 136, 138, 0.52);
+  -moz-box-shadow: 4px 4px 25px 0px rgba(110, 136, 138, 0.52);
+  box-shadow: 4px 4px 25px 0px rgba(110, 136, 138, 0.52);
+  border-radius: 5px;
+}
+
+
+.separator {
+  /* Content is centered horizontally */
+  align-items: center;
+  display: flex;
+
+  /* Used to set the position of text */
+  position: relative;
+}
+
+.separator__content {
+  /* We won't see the separator line */
+  background: #fff;
+  text-align: center;
+  /* Displayed at the center of separator */
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Spacing */
+  padding: 0 0.25rem;
+
+  /* Demo */
+  width: 60%;
+}
+
+.separator__separator {
+  border-bottom: 1px solid #d1d5db;
+  height: 1px;
+  width: 100%;
+}
+
+
+.docked-at-corner {
+  position: relative;
+  border: 2px solid #d1d5db;
+  width: 70%;
+  height: 95%;
+  border-radius: 10px;
+}
+.docked-at-corner__docker {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-back {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  padding: 20px 0 0 0;
+  cursor: pointer;
+}

@@ -20,6 +20,7 @@ export class LoginInComponent implements OnInit {
   }
 
   login() {
+    this.router.navigate(['/sidenav']);
     if(this.formGroup.invalid){
       return;
     }

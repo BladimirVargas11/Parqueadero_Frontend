@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'sidenav',
     component: MenuLateralComponent,
-    canActivate: [AuthGuard],
+    //canActivate: [AuthGuard],
     children:  [
       {
         path: 'dashboard',

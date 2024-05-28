@@ -11,6 +11,8 @@ import { UserLog } from '../../models/user-login';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  focus: any;
+  focus1: any;
   usuario!:UserLog
   constructor(private loginService:LoginService) { 
     loginService.subject.subscribe(x=> this.usuario =x);
